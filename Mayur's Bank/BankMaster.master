@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BankMaster.master.cs" Inherits="BankMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:lightblue"> 
+    <form id="form1" runat="server">
+    <div style="background-color:lightcoral">
+        
+        <div style="text-align:center"> 
+            <h1 style="text-align:center">Mayur's Bank</h1>
+            &nbsp;</div>
+        <div style="text-align:right">
+            <asp:Label ID="lblname" Font-Size="Larger" runat="server" Text="Account Holder:"></asp:Label> &nbsp; &nbsp;
+            <asp:Label ID="lblnamedata" Font-Size="Larger" runat="server" Text=""></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="lblbal" Font-Size="Larger" runat="server" Text="Available Balance:"></asp:Label> &nbsp; &nbsp;
+            <asp:Label ID="lblbaldata" Font-Size="Larger" runat="server" Text=""></asp:Label>
+            
+        </div>
+            <br />
+        <div style="text-align:center"> 
+            <asp:HyperLink ID="HyperLink1" runat="server" BackColor="Black" ForeColor="#CCCCCC" Font-Size="X-Large" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" BackColor="Black" ForeColor="#CCCCCC" Font-Size="X-Large"  NavigateUrl="~/Transfer.aspx">Transfer Money</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server" BackColor="Black" ForeColor="#CCCCCC" Font-Size="X-Large" NavigateUrl="~/Withdraw.aspx">Withdraw Money</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink6" runat="server" BackColor="Black" ForeColor="#CCCCCC" Font-Size="X-Large" NavigateUrl="~/Deposit.aspx">Deposit Money</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink4" runat="server" BackColor="Black" ForeColor="#CCCCCC" Font-Size="X-Large" NavigateUrl="~/Home.aspx">Account Statement</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink5" runat="server" BackColor="Black" ForeColor="#CCCCCC" Font-Size="X-Large" NavigateUrl="~/Logout.aspx">Logout</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
